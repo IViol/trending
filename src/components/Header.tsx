@@ -10,6 +10,7 @@ const Header = () => {
 
   return (
     <div className='color-bg-secondary border-bottom'>
+      Ivan Violentov
       <div className='container-lg p-responsive text-center py-6'>
         <h1 className='h1'>Trending</h1>
         <p className='f4 color-text-secondary col-6 mx-auto'>{text}</p>
