@@ -1,0 +1,35 @@
+.subnav {
+  margin-bottom: 20px;
+}
+
+.subnav-item {
+  position: relative;
+  float: left;
+  padding: 5px 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-fg-default);
+  text-transform: capitalize;
+  border: 1px solid var(--color-border-default);
+
+  &.selected {
+    z-index: 2;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-accent-emphasis);
+    border-color: var(--color-accent-emphasis);
+  }
+
+  &:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  &+.subnav-item {
+    margin-left: -1px;
+  }
+}
