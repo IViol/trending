@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Select from '../select'
+import Select from './Select'
 
 const SpokenLanguage = () => (
   <Select

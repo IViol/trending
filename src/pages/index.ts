@@ -1,2 +1,2 @@
-export { default as Developers } from './developers'
-export { default as Repositories } from './repositories'
+export { default as Developers } from './Developers'
+export { default as Repositories } from './Repositories'

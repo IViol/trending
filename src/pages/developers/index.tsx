@@ -28,7 +28,7 @@ const Developers = ({ loadItems, items, isLoading }: DevelopersProps) => {
     <Main>
       <div>
         {isLoading || !items || !items.length ? null : items.map(item => (
-            <Developer {...item} />
+            <Developer key={item.url} {...item} />
           ))}
       </div>
     </Main>

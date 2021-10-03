@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { DeveloperData } from '../../../../models/trending'
+import { DeveloperData } from '../../../models/trending'
 
 const Developer = ({
   avatar,

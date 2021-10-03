@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Header, Settings } from '..'
+import { Header, Settings } from '.'
 
 type MainProps = {
   children: React.ReactNode

@@ -28,7 +28,7 @@ const Repositories = ({ loadItems, items, isLoading }: RepositoriesProps) => {
     <Main>
       <div>
         {isLoading || !items || !items.length ? null : items.map(item => (
-            <Repository {...item} />
+            <Repository key={item.url} {...item} />
           ))}
       </div>
     </Main>

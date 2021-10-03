@@ -389,6 +389,15 @@
   color: var(--color-fg-muted) !important;
 }
 
+.Link--secondary:hover {
+  color: var(--color-accent-fg) !important;
+}
+
+.Link--muted:hover {
+  color: var(--color-accent-fg) !important;
+  text-decoration: none;
+}
+
 .css-truncate.css-truncate-target, .css-truncate .css-truncate-target {
   display: inline-block;
   max-width: 125px;
@@ -402,4 +411,18 @@
 
 .table-list-header-toggle .select-menu-button:hover, .table-list-header-toggle .select-menu-button.selected, .table-list-header-toggle .select-menu-button.selected:hover {
   color: var(--color-fg-default);
+}
+
+.avatar-user {
+  border-radius: 50% !important;
+}
+
+.btn:hover, .btn.hover, [open]>.btn {
+  background-color: var(--color-btn-hover-bg);
+  border-color: var(--color-btn-hover-border);
+  transition-duration: .1s;
+}
+
+.btn:hover {
+  text-decoration: none;
 }

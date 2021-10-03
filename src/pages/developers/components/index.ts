@@ -1,1 +1,1 @@
-export { default as Developer } from './developer'
+export { default as Developer } from './Developer'

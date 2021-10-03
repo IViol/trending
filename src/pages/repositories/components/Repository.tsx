@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { RepositoryData } from '../../../../models/trending'
+import { RepositoryData } from '../../../models/trending'
 
 const Repository = ({
   builtBy,
@@ -60,11 +60,13 @@ const Repository = ({
     <p className='col-9 color-text-secondary my-1 pr-4'>{description}</p>
 
     <div className='f6 color-text-secondary mt-2'>
-      <span className='d-inline-block ml-0 mr-3'>
-        <span className='repo-language-color' style={{backgroundColor: languageColor}}></span>
-        <span>{language}</span>
-      </span>
-      <a href='/sindresorhus/awesome/stargazers' className='Link--muted d-inline-block mr-3'>
+      {language && (
+        <span className='d-inline-block ml-0 mr-3'>
+          <span className='repo-language-color' style={{backgroundColor: languageColor}}></span>
+          <span>{language}</span>
+        </span>
+      )}
+      <a href={`//github.com//${username}/${repositoryName}/stargazers`} className='Link--muted d-inline-block mr-3'>
         <svg
           aria-label='star'
           role='img'
@@ -81,7 +83,7 @@ const Repository = ({
         </svg>&nbsp;{totalStars}
       </a>
       <a
-        href={`/${username}/${repositoryName}/network/members.${repositoryName}`}
+        href={`//github.com/${username}/${repositoryName}/network/members.${repositoryName}`}
         className='Link--muted d-inline-block mr-3'
       >
         <svg
