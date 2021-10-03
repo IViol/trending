@@ -18,6 +18,14 @@ a {
   color: var(--color-accent-fg);
   text-decoration: none;
   background-color: transparent;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active, &:hover {
+    outline-width: 0;
+  }
 }
 
 button, html [type=button], [type=reset], [type=submit] {
@@ -54,16 +62,6 @@ input, select, textarea, button {
   line-height: inherit;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 600;
-}
-.h3 {
-  font-size: 20px;
-}
-.h3 {
-  font-size: 18px;
-}
-
 p {
   margin-top: 0;
   margin-bottom: 10px;
@@ -71,6 +69,16 @@ p {
 
 img {
   border-style: none;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 html {

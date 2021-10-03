@@ -1,4 +1,5 @@
 import React from 'react'
+import { Provider } from 'react-redux'
 
 import {
   BrowserRouter as Router,
@@ -7,22 +8,25 @@ import {
   Redirect,
 } from 'react-router-dom'
 
+import { store } from './store'
 import { Developers, Repositories } from './pages'
 
 import './styles/index.scss'
 
 const App = () => (
-  <Router>
-      <Switch>
-        <Redirect exact from="/" to="repositories" />
-        <Route path="/repositories">
-          <Repositories />
-        </Route>
-        <Route path="/developers">
-          <Developers />
-        </Route>
-      </Switch>
-  </Router>
+  <Provider store={store}>
+      <Router>
+        <Switch>
+          <Redirect exact from='/' to='repositories' />
+          <Route path='/repositories'>
+            <Repositories />
+          </Route>
+          <Route path='/developers'>
+            <Developers />
+          </Route>
+        </Switch>
+    </Router>
+  </Provider>
 )
 
 export default App

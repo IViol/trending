@@ -1,39 +1,59 @@
 .color-bg-secondary {
-  background-color: var(--color-canvas-subtle);
+  background-color: var(--color-canvas-subtle) !important;
 }
 
 .color-text-secondary {
-  color: var(--color-fg-muted);
+  color: var(--color-fg-muted) !important;
 }
 
 .color-fg-sponsors {
-  color: var(--color-sponsors-fg);
+  color: var(--color-sponsors-fg) !important;
+}
+
+.color-text-orange-light, .text-orange-light {
+  color: var(--color-severe-fg) !important;
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .v-align-middle {
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 
 .f4 {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .f6 {
-  font-size: 12px;
+  font-size: 12px !important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600 !important;
+}
+
+.h3 {
+  font-size: 20px !important;
+}
+
+.h4 {
+  font-size: 16px !important;
 }
 
 .text-normal {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .text-bold {
-  font-weight: 600;
+  font-weight: 600 !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
 }
 
 .lh-condensed {
-  line-height: 1.25;
+  line-height: 1.25 !important;
 }

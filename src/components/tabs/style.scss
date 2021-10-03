@@ -12,7 +12,7 @@
   text-transform: capitalize;
   border: 1px solid var(--color-border-default);
 
-  &.selected {
+  &.selected, &.selected:hover, &.selected:focus {
     z-index: 2;
     color: var(--color-fg-on-emphasis);
     background-color: var(--color-accent-emphasis);
@@ -31,5 +31,10 @@
 
   &+.subnav-item {
     margin-left: -1px;
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+    background-color: var(--color-canvas-subtle);
   }
 }

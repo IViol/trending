@@ -384,3 +384,22 @@
   flex-shrink: 0;
   box-shadow: 0 0 0 1px var(--color-avatar-border);
 }
+
+.Link--secondary {
+  color: var(--color-fg-muted) !important;
+}
+
+.css-truncate.css-truncate-target, .css-truncate .css-truncate-target {
+  display: inline-block;
+  max-width: 125px;
+  vertical-align: top;
+}
+.css-truncate.css-truncate-overflow, .css-truncate .css-truncate-overflow, .css-truncate.css-truncate-target, .css-truncate .css-truncate-target {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table-list-header-toggle .select-menu-button:hover, .table-list-header-toggle .select-menu-button.selected, .table-list-header-toggle .select-menu-button.selected:hover {
+  color: var(--color-fg-default);
+}
